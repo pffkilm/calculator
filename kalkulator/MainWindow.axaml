@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="kalkulator.MainWindow"
+        Title="kalkulator"
+		Width="280"
+		Height="400">
+	<StackPanel>
+		<TextBox Name="Tb"></TextBox>
+		
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="Ac" Click="Number_Click">←</Button>
+			<Button x:Name="Square" Click="Number_Click" >x²</Button> 
+			<Button x:Name="Procent" Click="Number_Click" >%</Button>
+			<Button x:Name="Clean" Click="Number_Click" >C</Button>
+		</StackPanel>
+		
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="B1" Click="Number_Click">1</Button>
+			<Button x:Name="B2" Click="Number_Click">2</Button>
+			<Button x:Name="B3" Click="Number_Click">3</Button>
+			<Button Name="Plus" Click="Number_Click">+</Button>
+		</StackPanel>
+		
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="B4" Click="Number_Click">4</Button>
+			<Button x:Name="B5" Click="Number_Click">5</Button>
+			<Button x:Name="B6" Click="Number_Click">6</Button>
+			<Button Name="Minus" Click="Number_Click">-</Button>
+		</StackPanel>
+		
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="B7" Click="Number_Click">7</Button>
+			<Button x:Name="B8" Click="Number_Click">8</Button>
+			<Button x:Name="B9" Click="Number_Click">9</Button>
+			<Button Name="Del" Click="Number_Click">/</Button>
+		</StackPanel>
+		
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="Dec" Click="Number_Click">,</Button>
+			<Button x:Name="B0" Click="Number_Click">0</Button>
+			<Button x:Name="Ymn" Click="Number_Click">*</Button>
+			<Button x:Name="Result" Click="Number_Click">=</Button>
+		</StackPanel>
+		
+	</StackPanel>
+</Window>
